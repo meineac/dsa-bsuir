@@ -1,135 +1,25 @@
-% % кодировка и язык
-% \usepackage[T2A]{fontenc}
-% \usepackage[utf8]{inputenc}
-% \usepackage[english,russian]{babel}
-
-% \usepackage{csquotes} 
-
-% % математика
-% \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-% \usepackage{dsfont}     % для индикаторных функций
-% \usepackage{nicefrac}   % красивые дроби
-
-% % оформление и графика
-% \usepackage{graphicx}
-% \usepackage{geometry}
-% \geometry{top=2cm, bottom=2cm, left=2.5cm, right=1.5cm}
-% \usepackage{booktabs}   % таблицы
-% \usepackage{float}      % для [H]
-
-% % библиография
-% \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
-% \addbibresource{references.bib}
-
-% % гиперссылки
-% \usepackage[colorlinks=true, linkcolor=blue, citecolor=green, urlcolor=blue]{hyperref}
-       
-
-% \providecommand{\Prob}{} 
-% \renewcommand{\Prob}{\mathbb{P}}   
-
-% \newcommand{\dt}{\partial_t}       
-% \newcommand{\dx}{\nabla_x}         
-
-% % округление для теорем
-% \newtheorem{theorem}{Теорема}
-% \newtheorem{lemma}{Лемма}
-% \newtheorem{definition}{Определение}
-
-%---------------------------------------Катя
-
-% % кодировка и язык
-% \usepackage[T2A]{fontenc}
-% \usepackage[utf8]{inputenc}
-% \usepackage[english,russian]{babel}
-% \usepackage{csquotes} 
-
-% % математика
-% \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-% \usepackage{dsfont}     % для индикаторных функций
-% \usepackage{nicefrac}   % красивые дроби
-
-% % оформление и графика
-% \usepackage{graphicx}
-% \usepackage{geometry}
-% \geometry{top=2cm, bottom=2cm, left=2.5cm, right=1.5cm}
-% \usepackage{booktabs}   % профессиональные таблицы
-% \usepackage{float}      % для позиционирования [H]
-% \usepackage{xcolor}     % работа с цветом
-
-% % алгоритмы и псевдокод
-% \usepackage{algorithm}
-% \usepackage{algpseudocode}
-
-% % листинги кода
-% \usepackage{listings}
-% \lstset{
-%   language=C++,
-%   basicstyle=\small\ttfamily,
-%   keywordstyle=\color{blue}\bfseries,
-%   commentstyle=\color{gray}\itshape,
-%   stringstyle=\color{orange!80!black},
-%   showstringspaces=false,
-%   breaklines=true,
-%   frame=single,
-%   numbers=left,
-%   numberstyle=\tiny\color{gray},
-%   tabsize=4,
-%   captionpos=b,
-%   morekeywords={VectorXd, MatrixXd, FullPivLU, vector, pair,
-%                 iota, emplace_back, auto}
-% }
-
-% % библиография
-% \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
-% \addbibresource{references.bib}
-
-% % гиперссылки (лучше загружать последним среди пакетов)
-% \usepackage[colorlinks=true, linkcolor=blue, citecolor=green, urlcolor=blue]{hyperref}
-
-% % пользовательские команды
-% \providecommand{\Prob}{} 
-% \renewcommand{\Prob}{\mathbb{P}}   
-% \newcommand{\dt}{\partial_t}       
-% \newcommand{\dx}{\nabla_x}         
-
-% % окружение для теорем
-% \newtheorem{theorem}{Теорема}
-% \newtheorem{lemma}{Лемма}
-% \newtheorem{definition}{Определение}
-
-% % настройки подписей алгоритмов на русском языке
-% \makeatletter
-% \renewcommand{\ALG@name}{Алгоритм}
-% \renewcommand{\listalgorithmname}{Список алгоритмов}
-% \makeatother
-
-%------------------------------- new
 % ==================================================================
-% КОДИРОВКА И ЯЗЫК
+% ЯЗЫК И КОДИРОВКА
 % ==================================================================
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage{csquotes} 
+\usepackage{csquotes}
 
 % ==================================================================
 % МАТЕМАТИКА
 % ==================================================================
-\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-\usepackage{dsfont}     % для индикаторных функций
-\usepackage{nicefrac}   % красивые дроби
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
 
 % ==================================================================
-% ОФОРМЛЕНИЕ, ГРАФИКА И ТАБЛИЦЫ
+% ВЕРСТКА И ТАБЛИЦЫ
 % ==================================================================
-\usepackage{graphicx}
 \usepackage{geometry}
 \geometry{top=2cm, bottom=2cm, left=2.5cm, right=1.5cm}
-\usepackage{booktabs}   % профессиональные таблицы (\toprule, \midrule)
-\usepackage{multirow}   % объединение строк в таблицах
-\usepackage{float}      % позиционирование [H]
-\usepackage{xcolor}     % работа с цветом
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{xcolor}
 
 % ==================================================================
 % АЛГОРИТМЫ И ПСЕВДОКОД
@@ -138,37 +28,34 @@
 \usepackage{algpseudocode}
 
 % ==================================================================
-% НАСТРОЙКИ ОТОБРАЖЕНИЯ КОДА (LISTINGS)
+% ЛИСТИНГИ КОДА
 % ==================================================================
 \usepackage{listings}
 
-% Определение цветов для подсветки
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \lstset{
-    backgroundcolor=\color{backcolour},   % цвет фона
-    commentstyle=\color{codegreen},       % цвет комментариев
-    keywordstyle=\color{blue}\bfseries,   % цвет ключевых слов
-    numberstyle=\tiny\color{codegray},    % стиль номеров строк
-    stringstyle=\color{codepurple},       % цвет строк
-    basicstyle=\small\ttfamily,           % моноширинный шрифт
-    breakatwhitespace=false,         
-    breaklines=true,                      % автоматический перенос строк
-    captionpos=b,                         % заголовок снизу
-    keepspaces=true,                      % сохранять пробелы и отступы
-    numbers=left,                         % нумерация строк слева
-    numbersep=5pt,                  
-    showspaces=false,                
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\small\ttfamily,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
-    tabsize=4,                            % размер табуляции
-    frame=single,                         % рамка вокруг кода
-    % Дополнительные ключевые слова для C++ и Eigen
-    morekeywords={VectorXd, MatrixXd, FullPivLU, vector, pair,
-                 iota, emplace_back, auto}
+    showtabs=false,
+    tabsize=4,
+    frame=single,
+    morekeywords={VectorXd, MatrixXd, FullPivLU, vector, pair, iota, emplace_back, auto}
 }
 
 % ==================================================================
@@ -178,28 +65,17 @@
 \addbibresource{references.bib}
 
 % ==================================================================
-% ГИПЕРССЫЛКИ (загружать последним)
+% ГИПЕРССЫЛКИ
 % ==================================================================
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=green, urlcolor=blue]{hyperref}
 
 % ==================================================================
-% ПОЛЬЗОВАТЕЛЬСКИЕ КОМАНДЫ И ТЕОРЕМЫ
+% ТЕОРЕМЫ И ЛОКАЛИЗАЦИЯ
 % ==================================================================
-\providecommand{\Prob}{} 
-\renewcommand{\Prob}{\mathbb{P}}   
-\newcommand{\dt}{\partial_t}       
-\newcommand{\dx}{\nabla_x}         
-
-% Окружения для теорем
 \newtheorem{theorem}{Теорема}
-\newtheorem{lemma}{Лемма}
 \newtheorem{definition}{Определение}
 
-% Локализация заголовков алгоритмов
 \makeatletter
 \renewcommand{\ALG@name}{Алгоритм}
 \renewcommand{\listalgorithmname}{Список алгоритмов}
 \makeatother
-
-% ==================================================================
-
